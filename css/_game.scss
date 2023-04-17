@@ -1,0 +1,124 @@
+body.game {
+  background-image: url('../assets/imgs/common/bg-striped-blue.svg');
+  opacity: 1;
+  transition: opacity 3s ease-in-out;
+}
+
+.memory-game-logo-game {
+  top: 16%;
+  position: absolute; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.countdown {
+  position: fixed;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.board {
+  width: 950px;
+  height: 950px;
+  margin: 600px auto 0 70px;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.card {
+  width: calc(23% - 10px);
+  height: calc(32% - 10px);
+  margin: 14px;
+
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+.lion {
+  position: absolute;
+  right: 30%;
+  bottom: 0;
+}
+
+.owl {
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+}
+
+.movement-animation-lion {
+  animation: move-right-left-animation 3s infinite alternate;
+}
+
+.movement-animation-owl {
+  animation: move-left-right-animation 3s infinite alternate;
+}
+
+@keyframes move-right-left-animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-left-right-animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-230%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes jump-animation {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-200px); }
+  100% { transform: translateY(0); }
+}
+
+.jump {
+  animation: jump-animation 0.7s ease-out;
+}
+
+.piscar-tempo {
+  color: #FFD77C;
+  animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+  50% {
+    opacity: 0;
+  }
+}
