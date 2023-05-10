@@ -1,3 +1,4 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
 confetti1();
 
 const logo = document.getElementById("logo-win");

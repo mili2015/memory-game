@@ -1,3 +1,4 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
 const cards = document.querySelectorAll('.card');
 
 let isFirstCardFlipped = false;
