@@ -8,6 +8,7 @@ body.index {
     top: 80.8%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
+    animation: animate 1.5s linear infinite;
 }
 
 .start-button-text {
@@ -48,4 +49,18 @@ body.index {
     top: 92.6%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
 }
