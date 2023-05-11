@@ -11,7 +11,25 @@ let timeleft = 40;
 let timerIsRunning = true;
 let countdownTimer;
 
+let isPreviewCountdown = true;
+
+(function startGame() {
+  setTimeout(function() {
+    flipAllCards();
+    startCountdownPreview();
+  }, 500);
+
+  //add listeners after preview ended
+  setTimeout(function() {
+    cards.forEach(card => card.addEventListener('click', flipCard));
+  }, 4500);
+})();
+
 function startCountdown() {
+  timeleft = 40;
+  let countdown = document.getElementById("countdown")
+  countdown.textContent = '0:40';
+
   countdownTimer = setInterval(function(){
     timeleft--;
 
@@ -30,18 +48,58 @@ function startCountdown() {
   }, 1000);
 }
 
+function startCountdownPreview() {
+  timeleft = 4;
+  let countdown = document.getElementById("countdown")
+  countdown.textContent = '0:04';
+
+  countdownTimer = setInterval(function(){
+    timeleft--;
+
+    let minutes = Math.floor(timeleft / 60);
+    let seconds = timeleft % 60;
+    let formattedTime = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+
+    let countdown = document.getElementById("countdown")
+    countdown.textContent = formattedTime;
+
+    if(timeleft == 0 && isPreviewCountdown) {
+      timeleft = 40;
+      let countdown = document.getElementById("countdown")
+      countdown.textContent = '0:40';
+      isPreviewCountdown = false;
+      unFlipAllCards();
+    }
+
+    if(timeleft == 10 && ! isPreviewCountdown)
+      countdown.classList.add("piscar-tempo");
+
+    if(timeleft == 0 && ! isPreviewCountdown)
+      validateWin();
+      
+  }, 1000);
+}
+
 function pauseCountdown() {
   clearInterval(countdownTimer);
   timerIsRunning = false;
 }
 
-startCountdown();
+function flipAllCards() {
+  cards.forEach(card => {
+    card.classList.add('flip');
+  });
+}
+
+function unFlipAllCards() {
+  cards.forEach(card => {
+    card.classList.remove('flip');
+  });
+}
 
 cards.forEach(card => {
   card.style.order = Math.floor(Math.random() * totalCards);
 });
-
-cards.forEach(card => card.addEventListener('click', flipCard));
 
 function flipCard() {
   if (firstCard != null && secondCard != null) 
@@ -131,7 +189,7 @@ function unflipCardPair() {
   setTimeout(() => {
     unflipCardPairAnimation();
     resetVariables();
-  }, 1500);
+  }, 1000);
 }
 
 function unflipCardPairAnimation() {
