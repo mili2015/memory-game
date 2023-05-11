@@ -68,3 +68,12 @@ body.index {
 .countdown-color {
     color: #FFD77C;
 }
+
+#user-counter-div {
+    position: absolute; 
+    top: 1%;
+    left: 1%; 
+    color: white;
+    font-size: xx-large;
+    opacity: 0;
+}
