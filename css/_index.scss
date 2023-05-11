@@ -8,7 +8,7 @@ body.index {
     top: 80.8%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    animation: animate 1.5s linear infinite;
+    animation: start-bt-blink 3s linear infinite;
 }
 
 .start-button-text {
@@ -51,9 +51,9 @@ body.index {
     transform: translate(-50%, -50%); 
 }
 
-@keyframes animate {
+@keyframes start-bt-blink {
     0% {
-        opacity: 0.4;
+        opacity: 0.6;
     }
 
     50% {
@@ -61,7 +61,7 @@ body.index {
     }
 
     100% {
-        opacity: 0.4;
+        opacity: 0.6;
     }
 }
 

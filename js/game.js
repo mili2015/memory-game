@@ -16,7 +16,7 @@ let isPreviewCountdown = true;
 (function startGame() {
   setTimeout(function() {
     flipAllCards();
-    startCountdownPreview();
+    startCountdown();
   }, 500);
 
   //add listeners after preview ended
@@ -26,32 +26,9 @@ let isPreviewCountdown = true;
 })();
 
 function startCountdown() {
-  timeleft = 40;
+  timeleft = 2;
   let countdown = document.getElementById("countdown")
-  countdown.textContent = '0:40';
-
-  countdownTimer = setInterval(function(){
-    timeleft--;
-
-    let minutes = Math.floor(timeleft / 60);
-    let seconds = timeleft % 60;
-    let formattedTime = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
-
-    let countdown = document.getElementById("countdown")
-    countdown.textContent = formattedTime;
-
-    if(timeleft == 10)
-      countdown.classList.add("piscar-tempo");
-
-    validateWin();
-
-  }, 1000);
-}
-
-function startCountdownPreview() {
-  timeleft = 4;
-  let countdown = document.getElementById("countdown")
-  countdown.textContent = '0:04';
+  countdown.textContent = '0:02';
 
   countdownTimer = setInterval(function(){
     timeleft--;
