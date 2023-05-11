@@ -1,16 +1,53 @@
-<svg width="1080" height="1920" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.000244141" width="1084" height="1920" fill="#29C0F9"/>
-<rect x="0.000244141" width="57" height="1920" fill="#27BCF4"/>
+<svg width="1080" height="1810" viewBox="0 0 1080 1810" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_320_3)">
+<path d="M1080 -42H-6.10352e-05V1878H1080V-42Z" fill="url(#paint0_radial_320_3)"/>
+</g>
+<g style="mix-blend-mode:saturation">
+<rect x="6.10352e-05" width="57" height="1920" fill="#27BCF4"/>
+</g>
+<g style="mix-blend-mode:saturation">
 <rect x="342" width="57" height="1920" fill="#27BCF4"/>
+</g>
+<g style="mix-blend-mode:saturation">
 <rect x="685" width="57" height="1920" fill="#27BCF4"/>
+</g>
+<g style="mix-blend-mode:saturation">
 <rect x="171" width="57" height="1920" fill="#27BCF4"/>
+</g>
+<g style="mix-blend-mode:saturation">
 <rect x="513" width="58" height="1920" fill="#27BCF4"/>
+</g>
+<g style="mix-blend-mode:saturation">
 <rect x="856" width="57" height="1920" fill="#27BCF4"/>
-<rect x="86.0002" width="57" height="1920" fill="#27BCF4"/>
+</g>
+<g style="mix-blend-mode:saturation">
+<rect x="86.0001" width="57" height="1920" fill="#27BCF4"/>
+</g>
+<g style="mix-blend-mode:saturation">
 <rect x="428" width="57" height="1920" fill="#27BCF4"/>
+</g>
+<g style="mix-blend-mode:saturation">
 <rect x="770" width="57" height="1920" fill="#27BCF4"/>
+</g>
+<g style="mix-blend-mode:saturation">
 <rect x="257" width="57" height="1920" fill="#27BCF4"/>
+</g>
+<g style="mix-blend-mode:saturation">
 <rect x="599" width="57" height="1920" fill="#27BCF4"/>
+</g>
+<g style="mix-blend-mode:saturation">
 <rect x="941" width="57" height="1920" fill="#27BCF4"/>
+</g>
+<g style="mix-blend-mode:saturation">
 <rect x="1027" width="57" height="1920" fill="#27BCF4"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_320_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(564.69 -177.92) scale(1937.35 1937.35)">
+<stop stop-color="#20E2FF"/>
+<stop offset="1" stop-color="#00A5FF"/>
+</radialGradient>
+<clipPath id="clip0_320_3">
+<rect width="1080" height="1920" fill="white" transform="translate(-6.10352e-05 -42)"/>
+</clipPath>
+</defs>
 </svg>
