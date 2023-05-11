@@ -5,7 +5,7 @@
 body {
     @extend .disable-selection;
 
-    height: 100%;
+    height: 100vh;
     display: flex;
     background-size: cover;
     background-position: center;
