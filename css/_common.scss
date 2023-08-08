@@ -23,15 +23,8 @@ body {
 .default-font-1 {
   @extend .default-font;
 
-  font-size: 150px;
+  font-size: 1000%;
   line-height: 100%;
-}
-
-.default-font-2 {
-  @extend .default-font;
-
-  font-size: 64px;
-  line-height: 234%;
 }
 
 .default-font-3 {

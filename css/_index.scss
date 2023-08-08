@@ -1,13 +1,5 @@
 body.index {
-    background-image: url('../assets/imgs/common/bg-striped-blue.svg');
-}
-
-.love-care-logo-index {
-    position: fixed; 
-    border: none;
-    top: 92.6%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+    background-image: url('../assets/imgs/bg-striped-blue.svg');
 }
 
 .start-button {
@@ -29,10 +21,7 @@ body.index {
 }
 
 #user-counter-div {
-    position: absolute; 
-    top: 1%;
-    left: 1%; 
     color: white;
-    font-size: 600%;
+    font-size: 200%;
     opacity: 0;
 }
