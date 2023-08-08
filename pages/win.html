@@ -6,41 +6,50 @@
   <title>Vitória</title>
 
   <link rel="stylesheet" href="../css/main.min.css">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+  crossorigin="anonymous">
 </head>
-<body class="win">
 
-  <div id="containerwin">
-
-  <main>
-    <div id="emoji-win" class="emoji emoji--haha">
-      <div class="emoji__face">
-        <div class="emoji__eyes"></div>
-        <div class="emoji__mouth">
-          <div class="emoji__tongue"></div>
+<body class="win" id="containerwin">
+  <div class="container-fluid"  style="border: 1px solid red;">
+    <div class="row justify-content-center align-items-center" style="border: 1px solid red; margin-top: 20%;">
+      <div class="col-12 text-center">
+        <div class="emoji emoji--haha" style="scale: 175%;">
+          <div class="emoji__face">
+            <div class="emoji__eyes"></div>
+            <div class="emoji__mouth">
+              <div class="emoji__tongue"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="row" style="border: 1px solid red;">
+      <div class="col-12 text-center">
+        <img class="img-fluid" src="../assets/parabens-shapes.svg">
+      </div>
+    </div>
+    <div class="row" style="border: 1px solid red;">
+      <div class="col-12 text-center">
+        <a href="../index.html">
+          <img class="img-fluid" src="../assets/bt-jogar-novamente.svg">
+        </a>
+      </div>
+    </div>
+    <div class="row my-5" style="border: 1px solid red;">
+      <div class="col-12 text-center">
+        <img id="logo-win" class="img-fluid" src="../assets/imgs/common/love-care-mili-logo-2.svg">
+      </div>
+    </div>
+  </div>
 
-    <div id="colorful-shapes" alt="Formas coloridas"></div>
-
-    <p class="default-font-1 msg-win">
-      Parabéns, você conseguiu!
-    </p>
-
-    <a href="../index.html">
-      <button class="button-blue-1 button-play-again-win">
-        <span class="default-font-2">JOGAR NOVAMENTE</span>
-      </button>
-    </a>
-  </main>
-
-  <footer>
-    <div id="logo-win" class="love-care-logo-2 love-care-logo-win" alt="Logo Mili Love&Care"></div>
-  </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+  crossorigin="anonymous"></script>
   <script src="../js/confetti-impl.js"></script>
   <script src="../js/confetti.js"></script>
   <script src="../js/win.js"></script>
+
 </body>
 </html>

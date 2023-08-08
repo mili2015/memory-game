@@ -22,7 +22,7 @@ let isPreviewCountdown = true;
   //add listeners after preview ended
   setTimeout(function() {
     cards.forEach(card => card.addEventListener('click', flipCard));
-  }, 4500);
+  }, 2500);
 })();
 
 function startCountdown() {
