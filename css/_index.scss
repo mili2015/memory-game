@@ -2,10 +2,6 @@ body.index {
     background-image: url('../assets/imgs/bg-striped-blue.svg');
 }
 
-.start-button {
-    animation: start-bt-blink 2s linear infinite;
-}
-
 @keyframes start-bt-blink {
     0% {
         opacity: 0.6;

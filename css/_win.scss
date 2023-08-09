@@ -12,13 +12,13 @@ body.win {
     animation: rotation 2s linear infinite;
     transform-origin: center;
     transform-style: preserve-3d;
-  }
+}
   
-  @keyframes rotation {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(360deg);
-    }
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
   }
+  to {
+    transform: rotateY(360deg);
+  }
+}
