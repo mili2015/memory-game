@@ -1,3 +1,4 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
 const cards = document.querySelectorAll('.card');
 
 let isFirstCardFlipped = false;
@@ -10,7 +11,25 @@ let timeleft = 40;
 let timerIsRunning = true;
 let countdownTimer;
 
+let isPreviewCountdown = true;
+
+(function startGame() {
+  setTimeout(function() {
+    flipAllCards();
+    startCountdown();
+  }, 500);
+
+  //add listeners after preview ended
+  setTimeout(function() {
+    cards.forEach(card => card.addEventListener('click', flipCard));
+  }, 2500);
+})();
+
 function startCountdown() {
+  timeleft = 2;
+  let countdown = document.getElementById("countdown")
+  countdown.textContent = '0:02';
+
   countdownTimer = setInterval(function(){
     timeleft--;
 
@@ -21,11 +40,20 @@ function startCountdown() {
     let countdown = document.getElementById("countdown")
     countdown.textContent = formattedTime;
 
-    if(timeleft == 10)
+    if(timeleft == 0 && isPreviewCountdown) {
+      timeleft = 40;
+      let countdown = document.getElementById("countdown")
+      countdown.textContent = '0:40';
+      isPreviewCountdown = false;
+      unFlipAllCards();
+    }
+
+    if(timeleft == 10 && ! isPreviewCountdown)
       countdown.classList.add("piscar-tempo");
 
-    validateWin();
-
+    if(timeleft == 0 && ! isPreviewCountdown)
+      validateWin();
+      
   }, 1000);
 }
 
@@ -34,13 +62,21 @@ function pauseCountdown() {
   timerIsRunning = false;
 }
 
-startCountdown();
+function flipAllCards() {
+  cards.forEach(card => {
+    card.classList.add('flip');
+  });
+}
+
+function unFlipAllCards() {
+  cards.forEach(card => {
+    card.classList.remove('flip');
+  });
+}
 
 cards.forEach(card => {
   card.style.order = Math.floor(Math.random() * totalCards);
 });
-
-cards.forEach(card => card.addEventListener('click', flipCard));
 
 function flipCard() {
   if (firstCard != null && secondCard != null) 
@@ -130,7 +166,7 @@ function unflipCardPair() {
   setTimeout(() => {
     unflipCardPairAnimation();
     resetVariables();
-  }, 1500);
+  }, 1000);
 }
 
 function unflipCardPairAnimation() {
