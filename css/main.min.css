@@ -28,7 +28,7 @@ body{
 }
 .default-font-5{
     font-weight: bold;
-    font-size:150%;
+    font-size:100%;
     line-height:121%
 }
 .disable-selection,body{
@@ -69,7 +69,7 @@ body.index{
 }
 
 body.game{
-    background-image:url("../assets/imgs/bg-striped-blue.svg");
+    background-image:url("../assets/imgs/bg-waves.svg");
     opacity:1;
     -webkit-transition:opacity 3s ease-in-out;
     transition:opacity 3s ease-in-out;
@@ -232,13 +232,13 @@ body.game{
     }
 }
 body.win{
-    background-image:url("../assets/imgs/bg-striped-blue.svg")
+    background-image:url("../assets/imgs/bg-waves.svg")
 }
 #containerwin{
     opacity:0;
     -webkit-transition:opacity 1s ease-in-out;
     transition:opacity 1s ease-in-out;
-    background-image:url("../assets/imgs/bg-striped-green.svg")
+    background-image:url("../assets/imgs/bg-waves.svg")
 }
 .logo-3d{
     -webkit-animation:rotation 2s linear infinite;
@@ -269,13 +269,13 @@ body.win{
     }
 }
 body.loss{
-    background-image:url("../assets/imgs/bg-striped-blue.svg")
+    background-image:url("../assets/imgs/bg-waves.svg")
 }
 #containerloss{
     opacity:0;
     -webkit-transition:opacity 1s ease-in-out;
     transition:opacity 1s ease-in-out;
-    background-image:url("../assets/imgs/bg-striped-pink.svg")
+    background-image:url("../assets/imgs/bg-waves.svg")
 }
 .emoji{
     width:120px;
