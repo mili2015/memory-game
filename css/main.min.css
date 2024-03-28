@@ -38,7 +38,7 @@ body{
     user-select:none
 }
 body.index{
-    background-image:url("../assets/imgs/bg-waves-main.svg")
+    background-image:url("../assets/imgs/bg-waves-moviment.gif")
 }
 @-webkit-keyframes start-bt-blink{
     0%{
