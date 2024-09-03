@@ -104,8 +104,8 @@ body.game{
     transform:rotateY(180deg)
 }
 .col-3.card{
-    width:198px;
-    height:298px;
+    width:178px;
+    height:278px;
     position:relative;
     text-align:center;
     background-color:rgba(0,0,0,0);
