@@ -43,9 +43,9 @@ function shuffleCards() {
 })();
 
 function startCountdown() {
-  timeleft = 2;
+  timeleft = 3;
   let countdown = document.getElementById("countdown")
-  countdown.textContent = '0:02';
+  countdown.textContent = '0:03';
 
   countdownTimer = setInterval(function(){
     timeleft--;
