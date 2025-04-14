@@ -39,7 +39,7 @@ body{
     user-select:none
 }
 body.index{
-    background-image:url("../assets/imgs/bg-waves-main.svg")
+    background-image:url("../assets/imgs/bg-mili-mulher-2025.png")
 }
 @-webkit-keyframes start-bt-blink{
     0%{
@@ -70,7 +70,7 @@ body.index{
 }
 
 body.game{
-    background-image:url("../assets/imgs/bg-waves.svg");
+    background-image:url("../assets/imgs/bg-mili-mulher-2025.png");
     opacity:1;
     -webkit-transition:opacity 3s ease-in-out;
     transition:opacity 3s ease-in-out;
@@ -233,13 +233,13 @@ body.game{
     }
 }
 body.win{
-    background-image:url("../assets/imgs/bg-waves.svg")
+    background-image:url("../assets/imgs/bg-mili-mulher-2025.png")
 }
 #containerwin{
     opacity:0;
     -webkit-transition:opacity 1s ease-in-out;
     transition:opacity 1s ease-in-out;
-    background-image:url("../assets/imgs/bg-waves.svg")
+    background-image:url("../assets/imgs/bg-mili-mulher-2025.png")
 }
 .logo-3d{
     -webkit-animation:rotation 2s linear infinite;
@@ -270,13 +270,13 @@ body.win{
     }
 }
 body.loss{
-    background-image:url("../assets/imgs/bg-waves.svg")
+    background-image:url("../assets/imgs/bg-mili-mulher-2025.png")
 }
 #containerloss{
     opacity:0;
     -webkit-transition:opacity 1s ease-in-out;
     transition:opacity 1s ease-in-out;
-    background-image:url("../assets/imgs/bg-waves.svg")
+    background-image:url("../assets/imgs/bg-mili-mulher-2025.png")
 }
 .emoji{
     width:120px;
