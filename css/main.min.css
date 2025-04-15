@@ -6,6 +6,7 @@ body{
     background-size:cover;
     background-position:center
 }
+
 .default-font,.default-font-4,.default-font-3,.default-font-1{
     font-family:"Quicksand";
     font-style:normal;
@@ -19,7 +20,7 @@ body{
     line-height:100%
 }
 .default-font-3{
-    font-size:450%;
+    font-size:650%;
     line-height:156%
 }
 .default-font-4{
@@ -37,12 +38,8 @@ body{
     -ms-user-select:none;
     user-select:none
 }
-.img-fluid{
-    height: 700px;
-    width: 550px;
-}
 body.index{
-    background-image:url("../assets/imgs/bg-waves-moviment.gif")
+    background-image:url("../assets/imgs/bg-mili-mulher-2025.png")
 }
 @-webkit-keyframes start-bt-blink{
     0%{
@@ -73,11 +70,11 @@ body.index{
 }
 
 body.game{
-    background-image:url("../assets/imgs/bg-waves.svg");
+    background-image:url("../assets/imgs/bg-mili-mulher-2025.png");
     opacity:1;
     -webkit-transition:opacity 3s ease-in-out;
     transition:opacity 3s ease-in-out;
-    height:80%;
+    height:100%;
     width:100%
 }
 .card{
@@ -104,8 +101,8 @@ body.game{
     transform:rotateY(180deg)
 }
 .col-3.card{
-    width:178px;
-    height:278px;
+    width:200px;
+    height:300px;
     position:relative;
     text-align:center;
     background-color:rgba(0,0,0,0);
@@ -236,13 +233,13 @@ body.game{
     }
 }
 body.win{
-    background-image:url("../assets/imgs/bg-waves.svg")
+    background-image:url("../assets/imgs/bg-mili-mulher-2025.png")
 }
 #containerwin{
     opacity:0;
     -webkit-transition:opacity 1s ease-in-out;
     transition:opacity 1s ease-in-out;
-    background-image:url("../assets/imgs/bg-waves.svg")
+    background-image:url("../assets/imgs/bg-mili-mulher-2025.png")
 }
 .logo-3d{
     -webkit-animation:rotation 2s linear infinite;
@@ -273,13 +270,13 @@ body.win{
     }
 }
 body.loss{
-    background-image:url("../assets/imgs/bg-waves.svg")
+    background-image:url("../assets/imgs/bg-mili-mulher-2025.png")
 }
 #containerloss{
     opacity:0;
     -webkit-transition:opacity 1s ease-in-out;
     transition:opacity 1s ease-in-out;
-    background-image:url("../assets/imgs/bg-waves.svg")
+    background-image:url("../assets/imgs/bg-mili-mulher-2025.png")
 }
 .emoji{
     width:120px;
