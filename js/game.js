@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', init);
+
+function init() {
+  shuffleCards();
+}
+
 document.addEventListener('contextmenu', event => event.preventDefault());
 const cards = document.querySelectorAll('.card');
 
@@ -13,6 +19,17 @@ let countdownTimer;
 
 let isPreviewCountdown = true;
 
+// Função para embaralhar as cartas
+function shuffleCards() {
+  const cardContainer = document.querySelector('.card-container');
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    const randomPosition = Math.floor(Math.random() * cardContainer.children.length) + 1;
+    cardContainer.insertBefore(card, cardContainer.children[randomPosition]);
+  });
+}
+
 (function startGame() {
   setTimeout(function() {
     flipAllCards();
@@ -26,9 +43,9 @@ let isPreviewCountdown = true;
 })();
 
 function startCountdown() {
-  timeleft = 2;
+  timeleft = 3;
   let countdown = document.getElementById("countdown")
-  countdown.textContent = '0:02';
+  countdown.textContent = '0:03';
 
   countdownTimer = setInterval(function(){
     timeleft--;
@@ -74,9 +91,9 @@ function unFlipAllCards() {
   });
 }
 
-cards.forEach(card => {
-  card.style.order = Math.floor(Math.random() * totalCards);
-});
+//cards.forEach(card => {
+//  card.style.order = Math.floor(Math.random() * totalCards);
+//});
 
 function flipCard() {
   if (firstCard != null && secondCard != null) 
@@ -120,21 +137,9 @@ function disableCardPair() {
   resetVariables();
   totalFlippedCards += 2;
 
-  animalsJump();
   explosionsEffects();
 
   validateWin();
-}
-
-function animalsJump() {
-  let lion = document.getElementById("lion");
-  lion.classList.add("jump");
-  let owl = document.getElementById("owl");
-  owl.classList.add("jump");
-  setTimeout(() => {
-    lion.classList.remove("jump");
-    owl.classList.remove("jump");
-  }, 700);
 }
 
 function explosionsEffects() {
